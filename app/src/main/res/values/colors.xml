@@ -8,7 +8,7 @@
     <color name="enterBillBg">#00C6CC</color>
     <color name="enterBillBgText">#99E8E7</color>
     <color name="textDest">#77898A</color>
-    <color name="etTextColor">#99E8E7</color>
+    <color name="etTextColor">@color/colorWhite</color>
     <color name="etBillAmountHintTextColor">#99E8E7</color>
     <color name="dividerColor">#E6EBE9</color>
 </resources>
