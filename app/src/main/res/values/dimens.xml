@@ -11,7 +11,7 @@
     <dimen name="buttonClearRightMargin">20dp</dimen>
     <dimen name="buttonClearTopMargin">25dp</dimen>
     <dimen name="etBillAmountHeight">80dp</dimen>
-    <dimen name="etBillAmountTextSize">26sp</dimen>
+    <dimen name="etBillAmountTextSize">30sp</dimen>
     <dimen name="cardRadius">5dp</dimen>
     <dimen name="cardElevation">4dp</dimen>
     <dimen name="cardViewPayUsingTopMargin">190dp</dimen>

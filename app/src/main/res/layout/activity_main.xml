@@ -22,7 +22,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/baseMargin"
-                android:layout_marginStart="@dimen/baseMargin"
                 android:layout_marginTop="@dimen/baseMargin"
                 android:fontFamily="@font/ekmedium"
                 android:text="@string/placeHolderName"
@@ -30,7 +29,8 @@
                 android:textSize="@dimen/material_text_title"
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/baseMargin" />
 
             <TextView
                 android:id="@+id/textPhoneNumber"
@@ -190,7 +190,7 @@
                 android:id="@+id/upiTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="17dp"
                 android:fontFamily="@font/ekbold"
                 android:text="@string/textViewUPIPlaceHolder"
                 android:textColor="@color/colorDark"

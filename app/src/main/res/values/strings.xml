@@ -3,10 +3,10 @@
     <string name="placeHolderName">Roshan Sam</string>
     <string name="placeHolderNumber">9883828282</string>
     <string name="buttonChangeNameText">CHANGE</string>
-    <string name="etBillAmountHint">₹ Enter bill amount</string>
+    <string name="etBillAmountHint">₹ Enter Bill amount</string>
     <string name="textViewPayNowPlaceHolder">Pay using</string>
     <string name="textViewSimplTitlePlaceHolder">Simpl: ₹2000 available</string>
-    <string name="textViewSimplDescPlaceHolder">₹2000 will be charged to your acount</string>
+    <string name="textViewSimplDescPlaceHolder">₹2000 will be charged to your account</string>
     <string name="textViewUPIPlaceHolder">UPI</string>
     <string name="textViewUPIDescPlaceHolder">A payment request will be sent to your VPA</string>
     <string name="buttonPayNowPlaceHolder">PAY NOW</string>
