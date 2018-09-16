@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01D1D6</color>
+    <color name="colorPrimaryDark">#01BBBC</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDark">#344647</color>
+    <color name="enterBillBg">#00C6CC</color>
+    <color name="enterBillBgText">#99E8E7</color>
+    <color name="textDest">#77898A</color>
+</resources>
