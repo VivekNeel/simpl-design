@@ -10,4 +10,8 @@
 
     </style>
 
+    <style name="AppTheme.GreenRipple">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
 </resources>
