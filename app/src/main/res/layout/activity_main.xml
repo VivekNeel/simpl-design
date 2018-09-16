@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appBarHeight"
+        android:background="@drawable/appbar_bg">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/baseMargin"
+                android:layout_marginStart="@dimen/baseMargin"
+                android:layout_marginTop="@dimen/baseMargin"
+                android:fontFamily="@font/ekmedium"
+                android:text="@string/placeHolderName"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/material_text_title"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/baseMargin"
+                android:layout_marginStart="@dimen/baseMargin"
+                android:fontFamily="@font/eklight"
+                android:text="@string/placeHolderNumber"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/material_text_subhead"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+            <Button
+                android:id="@+id/buttonChangeName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/buttonChangeNameHeight"
+                android:layout_marginLeft="@dimen/buttonChangeNameLeftMargin"
+                android:layout_marginStart="@dimen/buttonChangeNameLeftMargin"
+                android:layout_marginTop="@dimen/buttonChangeNameTopMargin"
+                android:background="@drawable/change_button_bg"
+                android:fontFamily="@font/ekbold"
+                android:gravity="center"
+                android:text="@string/buttonChangeNameText"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintLeft_toRightOf="@+id/textName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/buttonClearRightMargin"
+                android:layout_marginRight="@dimen/buttonClearRightMargin"
+                android:layout_marginTop="@dimen/buttonClearTopMargin"
+                android:background="@drawable/ic_clear_black_24dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etBillAmount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/etBillAmountHeight"
+                android:layout_margin="@dimen/baseMargin"
+                android:background="@drawable/billedittext_bg"
+                android:fontFamily="@font/ekbold"
+                android:hint="@string/etBillAmountHint"
+                android:inputType="number"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="10dp"
+                android:paddingStart="40dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/etTextColor"
+                android:textColorHint="@color/etBillAmountHintTextColor"
+                android:textCursorDrawable="@drawable/cursor_bg"
+                android:textSize="@dimen/etBillAmountTextSize"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPhoneNumber" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewPayUsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/baseMargin"
+        android:layout_marginRight="@dimen/baseMargin"
+        android:layout_marginTop="@dimen/cardViewPayUsingTopMargin"
+        android:background="@color/colorDark"
+        app:cardCornerRadius="@dimen/cardRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_anchor="@+id/appBar"
+
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/payNowLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/baseMargin"
+                android:layout_marginStart="@dimen/baseMargin"
+                android:layout_marginTop="@dimen/textViewPayNowTopMargin"
+                android:text="@string/textViewPayNowPlaceHolder"
+                android:textColor="@color/textDest"
+                app:fontFamily="@font/catamaran"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/dividerColor"
+                app:layout_constraintTop_toBottomOf="@+id/payNowLabel" />
+
+            <RadioButton
+                android:id="@+id/simplRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/baseMargin"
+                android:layout_marginStart="@dimen/baseMargin"
+                android:layout_marginTop="@dimen/baseMargin"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/upiRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/baseMargin"
+                android:layout_marginStart="@dimen/baseMargin"
+                android:layout_marginTop="@dimen/baseMargin"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/simplDesc"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/simplTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/baseMargin"
+                android:fontFamily="@font/ekbold"
+                android:text="@string/textViewSimplTitlePlaceHolder"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/material_text_subhead"
+                app:layout_constraintLeft_toRightOf="@+id/simplRadioButton"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <TextView
+                android:id="@+id/simplDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/eklight"
+                android:text="@string/textViewSimplDescPlaceHolder"
+                android:textColor="@color/textDest"
+                android:textSize="@dimen/material_text_subhead"
+                app:layout_constraintLeft_toRightOf="@+id/simplRadioButton"
+                app:layout_constraintTop_toBottomOf="@+id/simplTitle" />
+
+            <TextView
+                android:id="@+id/upiTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ekbold"
+                android:text="@string/textViewUPIPlaceHolder"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/material_text_subhead"
+                app:layout_constraintLeft_toRightOf="@+id/simplRadioButton"
+                app:layout_constraintTop_toBottomOf="@+id/simplDesc" />
+
+            <TextView
+                android:id="@+id/upiDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="-15dp"
+                android:fontFamily="@font/eklight"
+                android:text="@string/textViewUPIDescPlaceHolder"
+                android:textColor="@color/textDest"
+                android:textSize="@dimen/material_text_subhead"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/simplRadioButton"
+                app:layout_constraintTop_toBottomOf="@+id/upiTitle" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/login_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/baseMargin"
+        android:layout_marginRight="@dimen/baseMargin"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/button_bg">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="15dp"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:fontFamily="@font/catamaran_bold"
+            android:gravity="center"
+            android:text="@string/buttonPayNowPlaceHolder"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/material_text_title"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
