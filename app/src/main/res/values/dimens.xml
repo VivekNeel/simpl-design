@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="appBarHeight">235dp</dimen>
+    <dimen name="appBarHeight">225dp</dimen>
     <dimen name="baseMargin">15dp</dimen>
     <dimen name="material_text_subhead">16sp</dimen>
     <dimen name="material_text_title">20sp</dimen>
     <dimen name="buttonChangeNameHeight">35dp</dimen>
     <dimen name="buttonChangeNameLeftMargin">20dp</dimen>
-    <dimen name="buttonChangeNameTopMargin">25dp</dimen>
+    <dimen name="buttonChangeNameTopMargin">20dp</dimen>
     <dimen name="buttonClearRightMargin">20dp</dimen>
     <dimen name="buttonClearTopMargin">25dp</dimen>
     <dimen name="etBillAmountHeight">80dp</dimen>

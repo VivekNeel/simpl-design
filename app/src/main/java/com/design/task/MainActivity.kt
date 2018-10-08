@@ -17,10 +17,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupListeners() {
+        simplRadioButton.isChecked = true
+        simplRadioButton.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                upiRadioButton.isChecked = false
+            }
+        }
+
+        upiRadioButton.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                simplRadioButton.isChecked = false
+            }
+        }
         buttonChangeName.setOnClickListener {
             showToast(getString(R.string.placeHolderOne))
         }
-        imageClose.setOnClickListener { showToast(getString(R.string.placeHolderTwo)) }
+        imageClose.setOnClickListener { finish() }
         payNowButton.setOnClickListener {
             if (etBillAmount.text.toString().isEmpty()) {
                 showToast(getString(R.string.placeHolderThree))
